@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retorno de Funções e Parâmetros</title>
+    <script src="retorno.js"></script>
+</head>
+<body>
+    <h1>Resultado</h1>
+    
+
+    <script>
+        num1 = parseFloat(prompt("Digite o Primeiro valor"))
+        num2 = parseFloat(prompt("Digite o Segundo valor"))
+        resp = parseInt(prompt("Digite 1 para Somar \n 2 para Subtrair \n 3 para Mutiplicar \n 4 para Dividir:"))
+
+        if (resp==1) {
+            document.write("<p> O valor da soma é = " + soma(num1,num2))
+        } 
+        if (resp==2) {
+            document.write("<p> O valor da subtração é = " + subtrair(num1,num2))
+        }
+        if (resp==3) {
+            document.write("<p> O valor da mutiplicação é = " + mutiplicar(num1,num2))
+        }
+        if (resp==4) {
+            document.write("<p> O valor da divisão é = " + dividir(num1,num2))
+        }
+        if ((resp < 1) || (resp >4)) {
+            document.write("<p> Você digitou uma opcão invalida")
+        }
+        
+
+
+
+    </script>
+</body>
+</html>
